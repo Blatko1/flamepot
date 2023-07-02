@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "drink_flame_potion": {
+            "trigger": "consume_item",
+            "conditions": {
+                "player": {},
+                "item": {
+                    "items": [
+                        "minecraft:potion"
+                    ],
+                    "nbt": "{flame_potion_10s:1b}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "basta:effects/potion_drunk"
+    }
+}
