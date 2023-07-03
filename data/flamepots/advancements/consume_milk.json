@@ -13,6 +13,6 @@
         }
     },
     "rewards": {
-        "function": "basta:normal/clear_effect"
+        "function": "flamepots:normal/clear_effect"
     }
 }

@@ -8,12 +8,12 @@
                     "items": [
                         "minecraft:potion"
                     ],
-                    "nbt": "{flame_potion_2:1b}"
+                    "nbt": "{flame_potion_1:1b}"
                 }
             }
         }
     },
     "rewards": {
-        "function": "basta:normal/potion2/on_use"
+        "function": "flamepots:normal/potion1/on_use"
     }
 }

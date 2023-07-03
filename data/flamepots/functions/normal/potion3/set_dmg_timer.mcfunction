@@ -1,0 +1,1 @@
+scoreboard players set @s flamepots.dmg_timer 10
