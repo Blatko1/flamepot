@@ -1,4 +1,4 @@
-damage @s 1 lava
+damage @s 1 on_fire
 
 # Decrease the used_potion_3 timer each interval
 scoreboard players operation @s flamepots.used_potion_3 -= numberOne flamepots.Constants

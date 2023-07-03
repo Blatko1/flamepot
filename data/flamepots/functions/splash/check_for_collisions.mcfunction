@@ -1,0 +1,1 @@
+execute as @e[type=armor_stand,tag=flamepot.splash_1_location] at @s run execute unless entity @e[type=potion,tag=flamepots.splash_flame1,distance=0..4,limit=1] run function flamepots:splash/on_collision
