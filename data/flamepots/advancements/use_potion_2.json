@@ -8,7 +8,7 @@
                     "items": [
                         "minecraft:potion"
                     ],
-                    "nbt": "{flame_potion_2:1b}"
+                    "nbt": "{flamepot.flame_potion_2:1b}"
                 }
             }
         }

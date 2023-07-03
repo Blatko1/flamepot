@@ -18,4 +18,9 @@ scoreboard objectives add flamepots.used_potion_3 dummy
 scoreboard objectives add flamepots.Constants dummy
 scoreboard players set numberOne flamepots.Constants 1
 
+# Scoreboards for throwing the Splash Potion of Flames:
+
+scoreboard objectives add flamepots.potion_thrown minecraft.used:splash_potion
+
+
 tellraw @a {"text": "Loaded Potions of Flames (flamepot)!", "color": "#9F4F7F"}

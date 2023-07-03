@@ -1,0 +1,2 @@
+execute as @e[type=potion,limit=1,sort=nearest,tag=!splash_flame] run execute if data entity @s Item.tag."flamepot.splash_flame_potion_1" run tag @s add flamepots.splash_flame
+scoreboard players reset @s flamepots.potion_thrown
