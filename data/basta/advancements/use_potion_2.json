@@ -1,15 +1,19 @@
 {
     "criteria": {
-        "drink_milk": {
+        "consume_flame_potion": {
             "trigger": "consume_item",
             "conditions": {
                 "player": {},
                 "item": {
                     "items": [
-                        "minecraft:milk_bucket"
-                    ]
+                        "minecraft:potion"
+                    ],
+                    "nbt": "{flame_potion_2:1b}"
                 }
             }
         }
+    },
+    "rewards": {
+        "function": "basta:normal/potion2/on_use"
     }
 }

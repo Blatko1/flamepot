@@ -1,7 +1,21 @@
-scoreboard objectives add potion_drank dummy
-scoreboard objectives add milk_drank minecraft.used:milk_bucket
+# Scoreboards for consuming the Potion of Flames:
 
-scoreboard objectives add minus_one dummy
-scoreboard players set @a minus_one 1
+# - used for setting how often to deal damage in ticks
+scoreboard objectives add dmg_timer dummy
 
-tellraw @a {"text": "Loaded Basta!", "color": "#9F4F7F"}
+# - a player's attribute which is set to 1 whenever 
+#   the player consumes any of Potions of Flames
+scoreboard objectives add used_potion dummy
+
+# - player's attributes which are set to a specific number whenever
+#   the player consumes the Potion of Flames with belonging attribute.
+# - the set number specifies number of times player will receive damage
+scoreboard objectives add used_potion_1 dummy
+scoreboard objectives add used_potion_2 dummy
+scoreboard objectives add used_potion_3 dummy
+
+# - used for scoreboard operations
+scoreboard objectives add Constants dummy
+scoreboard players set numberOne Constants 1
+
+tellraw @a {"text": "Loaded Potions of Flames!", "color": "#9F4F7F"}

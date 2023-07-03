@@ -1,2 +1,0 @@
-execute as @p[scores={potion_drank=1..}] at @s run particle lava ~ ~1.5 ~ 0.1 0.1 0.1 0 2 force
-execute as @p[scores={potion_drank=1..}] run schedule function basta:effects/player_potion_effect_particles_loop 2t
