@@ -3,6 +3,12 @@
 # - a player's attribute used for setting how often to deal damage in ticks
 scoreboard objectives add flamepot.dmg_timer dummy
 
+# - a player's attribute which is set to 1 whenever the player
+#   gets the effect from the Splash Potion of Flames
+#   or set to 0 whenever the player gets the effect from consuming 
+#   the Potion of Flames
+scoreboard objectives add flamepot.effect_on_splash dummy
+
 # - a player's attribute which is set to 1 whenever 
 #   the player gets the effect from the Potion of Flames
 scoreboard objectives add flamepot.affected dummy
@@ -17,11 +23,12 @@ scoreboard objectives add flamepot.affected_3 dummy
 
 # Scoreboards for throwing the Splash Potion of Flames:
 
+# - tracks each player for throwing splash potions
 scoreboard objectives add flamepot.potion_thrown minecraft.used:splash_potion
 
 
 # Used for scoreboard operations:
 scoreboard objectives add flamepot.Constants dummy
-scoreboard players set numberOne flamepot.Constants 1
+scoreboard players set flamepot.numberOne flamepot.Constants 1
 
 tellraw @a {"text": "Loaded Potions of Flames (flamepot)!", "color": "#9F4F7F"}
