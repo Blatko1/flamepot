@@ -1,11 +1,10 @@
 # Executes for every entity that has the effect:
 execute as @e[scores={flamepot.amplifier=1..}] run function flamepot:check_effects
 
-# Checks if any player (or entity if added) threw a potion:
-execute as @e[scores={flamepot.potion_thrown=1..}] at @s run function flamepot:on_throw
+# Checks for any newly thrown Splash Potions of Flames:
+execute as @e[type=potion,tag=!flamepot.checked_flame] run execute if data entity @s Item.tag."flamepot.splash_flame" run function flamepot:potion_projectile/identify_potion
 
-# For each thrown Splash Potion of Flame:
-function flamepot:check_for_collisions
-
-# Remove fire effect from any entity which doesn't have the effect anymore
-execute as @e[type=!player,tag=flamepot.on_flames] run execute unless entity @s[scores={flamepot.amplifier=1..}] run function flamepot:clear/clear_entity_effect
+# Check for every thrown Splash Potion of Flames if it has collided:
+execute as @e[tag=flamepot.splash_1_location] run execute at @s unless entity @e[tag=flamepot.splash_flame1,distance=0..0.3,limit=1] run function flamepot:effect1/on_trigger/area_effect
+execute as @e[tag=flamepot.splash_2_location] run execute at @s unless entity @e[tag=flamepot.splash_flame2,distance=0..0.3,limit=1] run function flamepot:effect2/on_trigger/area_effect
+execute as @e[tag=flamepot.splash_3_location] run execute at @s unless entity @e[tag=flamepot.splash_flame3,distance=0..0.3,limit=1] run function flamepot:effect3/on_trigger/area_effect

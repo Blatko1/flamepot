@@ -16,17 +16,13 @@ scoreboard objectives add flamepot.dmg_count dummy
 #   gets the effect from the Splash Potion of Flames
 scoreboard objectives add flamepot.effect_on_splash dummy
 
-
-# Scoreboards for throwing the Splash Potion of Flames:
-
-# - tracks each player for throwing splash potions
-scoreboard objectives add flamepot.potion_thrown minecraft.used:splash_potion
-
-
 # Used for scoreboard operations:
 scoreboard objectives add flamepot.Constants dummy
 scoreboard players set flamepot.numberOne flamepot.Constants 1
 scoreboard players set flamepot.numberTwo flamepot.Constants 2
+
+# Update entity (non player) fire effect:
+schedule function flamepot:schedule/update_entities 18t replace
 
 tellraw @a {"text": "Loaded Potions of Flames (flamepot)!", "color": "#9F4F7F"}
 
