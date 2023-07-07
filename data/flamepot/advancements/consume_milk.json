@@ -13,6 +13,6 @@
         }
     },
     "rewards": {
-        "function": "flamepot:clear/consume_milk"
+        "function": "flamepot:effects/clear/consume_milk"
     }
 }

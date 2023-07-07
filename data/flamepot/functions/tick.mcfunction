@@ -1,8 +1,5 @@
-# Executes for every entity that has the effect:
-execute as @e[scores={flamepot.amplifier=1..}] run function flamepot:check_effects
-
 # Checks for any newly thrown Splash Potions of Flames:
-execute as @e[type=potion,tag=!flamepot.checked_flame] run execute at @s if data entity @s Item.tag."flamepot.splash_flame" run function flamepot:identify_potion
+execute as @e[type=potion,tag=!flamepot.checked_potion] run function flamepot:throwing_potion/identify_potion
 
 # Check for every thrown Splash Potion of Flames if it has collided:
-execute as @e[tag=flamepot.splash_location] at @s run function flamepot:check_collision
+execute as @e[tag=flamepot.splash_location] at @s run execute unless entity @e[tag=flamepot.checked_flame,distance=0..0.3] run function flamepot:throwing_potion/on_collision

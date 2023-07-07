@@ -8,12 +8,12 @@
                     "items": [
                         "minecraft:potion"
                     ],
-                    "nbt": "{flamepot.flame_potion_2:1b}"
+                    "nbt": "{flamepot.burning:2b}"
                 }
             }
         }
     },
     "rewards": {
-        "function": "flamepot:effect2/on_trigger/consume_effect"
+        "function": "flamepot:consuming_potion/potion2"
     }
 }

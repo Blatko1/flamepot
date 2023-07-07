@@ -12,10 +12,6 @@ scoreboard objectives add flamepot.dmg_timer dummy
 # - when '0', entity's effect is then cleared 
 scoreboard objectives add flamepot.dmg_count dummy
 
-# - an attribute which is set to 1 whenever the entity
-#   gets the effect from the Splash Potion of Flames
-scoreboard objectives add flamepot.effect_on_splash dummy
-
 # Used for scoreboard operations:
 scoreboard objectives add flamepot.constants dummy
 scoreboard players set flamepot.numberOne flamepot.constants 1
@@ -30,13 +26,22 @@ scoreboard players set flamepot.effect1_dmg_count flamepot.potion_attributes 10
 scoreboard players set flamepot.effect2_dmg_count flamepot.potion_attributes 14
 scoreboard players set flamepot.effect3_dmg_count flamepot.potion_attributes 20
 
+# Every 5 ticks all entities with the effect active have their effect updated.
+# For example, if the dmg_timer is set to 2 it would take 2 updates for the
+# damage to be applied.
 # Change this if you want to amplify the damage speed (lower is faster):
-scoreboard players set flamepot.effect1_dmg_timer flamepot.potion_attributes 20
-scoreboard players set flamepot.effect2_dmg_timer flamepot.potion_attributes 15
-scoreboard players set flamepot.effect3_dmg_timer flamepot.potion_attributes 10
+scoreboard players set flamepot.effect1_dmg_timer flamepot.potion_attributes 4
+scoreboard players set flamepot.effect2_dmg_timer flamepot.potion_attributes 3
+scoreboard players set flamepot.effect3_dmg_timer flamepot.potion_attributes 2
 
-# Update entity (non player) fire effect:
+# Update non player entity's fire effect:
 schedule function flamepot:schedule/update_entities 10t replace
+
+# Check for effects every 5 ticks:
+schedule function flamepot:schedule/check_effects 5t replace
+
+# Add particles when the potion is thrown:
+schedule function flamepot:schedule/projectile_particles 5t replace
 
 tellraw @a {"text": "Loaded Potions of Flames (flamepot)!", "color": "#9F4F7F"}
 

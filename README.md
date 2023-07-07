@@ -1,8 +1,20 @@
 # flamepot
 
-`flamepot` is a Minecraft Datapack which adds a new types of potion called `Potion of Flames`. Main function of these potions is setting players, mobs and entities on fire.
+`flamepot` is a Minecraft Datapack which adds a new type of potion called `Potion of Flames`. Main function of these potions is setting players, mobs and entities on fire. Inspired by this [video](https://www.youtube.com/watch?v=vwoq296fI0k)
 
-### Future:
+## About
+
+This datapack adds 6 new items - 3 `Potion of Flames` and 3 `Splash Potion of Flames`, both with different amplifiers. Currently, there is only one available effect called **Burning** which can be found is three different states. These states are called **Burning**, **Burning II** and **Burning III** where the first is the weakest and the last is the strongest. 
+This effect sets the entity on fire and deals *1 fire damage* every *20 ticks* with the *Burning amplifier 1*, *1 fire damage* every *15 ticks* with the *Burning amplifier 2* and *1 fire damage* every *10 ticks* with the *Burning amplifier 3*.
+
+The **Potion of Flames** is a consumable potion which only affects the consumer and gives no benefits. Throwing a **Splash Potion of Flames** will 
+
+
+**Potion of Flames** is a consumable item 
+
+## Future
+
+- maybe: place fire where splash potion collides
 
 - try replacing data and NBT tags and selectors
 
