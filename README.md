@@ -6,6 +6,8 @@
 
 - try replacing data and NBT tags and selectors
 
+- add *summon functions* and */trigger* commands
+
 - maybe: remove Burning effect on rain
 
 - add an item which spawns an entity which constantly sets on fire everything in radius
