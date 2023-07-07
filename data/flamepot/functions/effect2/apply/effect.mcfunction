@@ -1,8 +1,8 @@
 # Applies the effect with amplifier 2
 
-scoreboard players set @s flamepot.amplifier 2
-scoreboard players set @s flamepot.dmg_timer 0
+# For entities (non players):
+execute as @s[type=!player] run data modify entity @s Fire set value 11
+execute as @s[type=!player] run tag @s add flamepot.entity_on_flames
 
-# Change this if you want to amplify number of times player gets damaged
-# (dmg_count * default_dmg_timer) / 20 = *effect duration in seconds*
-scoreboard players set @s flamepot.dmg_count 14
+scoreboard players set @s flamepot.amplifier 2
+execute store result score @s flamepot.dmg_count run scoreboard players get flamepot.effect2_dmg_count flamepot.potion_attributes

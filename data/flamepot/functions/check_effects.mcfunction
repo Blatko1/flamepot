@@ -5,7 +5,7 @@ execute as @s[scores={flamepot.amplifier=2, flamepot.dmg_timer=-2147483648..0}] 
 execute as @s[scores={flamepot.amplifier=3, flamepot.dmg_timer=-2147483648..0}] run function flamepot:effect3/trigger_effect
 
 # Reduces the dmg_timer by one for the entity on each tick
-scoreboard players operation @s flamepot.dmg_timer -= flamepot.numberOne flamepot.Constants
+scoreboard players operation @s flamepot.dmg_timer -= flamepot.numberOne flamepot.constants
 
 # Particle effects:
 # TODO wth does speed (500) here do???

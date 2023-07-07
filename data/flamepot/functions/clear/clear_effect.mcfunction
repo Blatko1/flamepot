@@ -1,3 +1,5 @@
+tag @s[type=!player] remove flamepot.entity_on_flames
+
 scoreboard players set @s flamepot.amplifier 0
 scoreboard players reset @s flamepot.dmg_count
 scoreboard players reset @s flamepot.dmg_timer
