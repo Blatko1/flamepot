@@ -20,8 +20,8 @@ scoreboard players set flamepot.numberTwo flamepot.constants 2
 # Constants for potion attributes:
 scoreboard objectives add flamepot.potion_attributes dummy
 
-# Change this if you want to amplify number of times player gets damaged
 # (dmg_count * default_dmg_timer) / 20 = *effect duration in seconds*
+# Change this if you want to amplify number of times player gets damaged:
 scoreboard players set flamepot.effect1_dmg_count flamepot.potion_attributes 10
 scoreboard players set flamepot.effect2_dmg_count flamepot.potion_attributes 14
 scoreboard players set flamepot.effect3_dmg_count flamepot.potion_attributes 20
@@ -40,10 +40,12 @@ schedule function flamepot:schedule/update_entities 10t replace
 # Check for effects every 5 ticks:
 schedule function flamepot:schedule/check_effects 5t replace
 
-# Add particles when the potion is thrown:
+# Add particles to the potion projectile while in the air:
 schedule function flamepot:schedule/projectile_particles 5t replace
+
+# Check if the potion is being crafted
+schedule function flamepot:schedule/ground_crafting/check 10t replace
 
 tellraw @a {"text": "Loaded Potions of Flames (flamepot)!", "color": "#9F4F7F"}
 
-# TODO add constant objectives which have stored info about 
-# each effect duration and damage
+# Remove some unecessary item tags if no new effects will be added
