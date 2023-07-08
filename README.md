@@ -1,6 +1,6 @@
 # flamepot
 
-`flamepot` is a Minecraft Datapack which adds a new type of potion called `Potion of Flames`. Main function of these potions is setting players, mobs and entities on fire. Inspired by this [video](https://www.youtube.com/watch?v=vwoq296fI0k)
+`flamepot` is a Minecraft Datapack which adds a new type of potion called `Potion of Flames`. Main function of these potions is setting players, mobs and entities on fire. Inspired by this [video](https://www.youtube.com/watch?v=vwoq296fI0k).
 
 ## About
 
