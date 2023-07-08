@@ -1,4 +1,3 @@
-kill @s
 kill @e[tag=flamepot.temp_crafting_tag]
 
 particle flame ~ ~ ~ 0.1 0.1 0.1 0.1 50 normal

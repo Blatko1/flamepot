@@ -14,6 +14,8 @@ The **Potion of Flames** is a consumable potion which only affects the consumer 
 
 ## Future
 
+- maybe: don't affect entities below the splash effect
+
 - add a tipped arrow burning effect
 
 - maybe: place fire where splash potion collides
