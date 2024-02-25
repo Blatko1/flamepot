@@ -2,8 +2,6 @@
 
 `flamepot` is a Minecraft datapack that adds a new type of potion called `Potion of Flames`. The main function of these potions is to set players, mobs and entities on fire. Inspired by this [video](https://www.youtube.com/watch?v=vwoq296fI0k).
 
-> You can follow the progress on this project [here](https://github.com/Blatko1/flamepot)
-
 ## About
 
 This datapack adds *6 new* items - 3 `Potion of Flames` and 3 `Splash Potion of Flames`, with different amplifiers. Currently, only one available effect called **Burning** can be found in three states. These states are called **Burning**, **Burning II** and **Burning III**, where the first is the weakest and the last is the strongest. 
