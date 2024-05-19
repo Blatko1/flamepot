@@ -7,11 +7,15 @@
 This datapack adds *6 new* items - 3 `Potion of Flames` and 3 `Splash Potion of Flames`, with different amplifiers. Currently, only one available effect called **Burning** can be found in three states. These states are called **Burning**, **Burning II** and **Burning III**, where the first is the weakest and the last is the strongest. 
 This effect sets the entity on fire and deals *1 fire damage* every *20 ticks* with the *Burning amplifier 1*, *1 fire damage* every *15 ticks* with the *Burning amplifier 2* and *1 fire damage* every *10 ticks* with the *Burning amplifier 3*.
 
-The **Potion of Flames** is a consumable potion which only affects the consumer and gives no benefits. Throwing a **Splash Potion of Flames** will provide the **Burning** effect to everything in a radius of 4 blocks from where the potion collides.
+The **Potion of Flames** is a consumable potion which only affects the consumer and gives no benefits. When the user drinks it, the effect **cannot** be extinguished only by water, **only by milk**!
+
+Throwing a **Splash Potion of Flames** will provide the **Burning** effect to everything in a radius of 4 blocks from where the potion collides. The effect **can be extinguished by water**, **not** by milk!
 
 ## Crafting
 
-You can craft the tier 1 Potion of Flames by throwing an **awkward potion** on a **crafting table** with exactly **10 blaze powders**. After a few moments, a Potion of Flames should appear. If you again drop exactly *10 blaze powders* next to the new potion, you will get a new Potion of Flames, which gives the *Burning II* effect. Dropping exactly *10 blaze powders* the third time will result in a Potion of Flames tier 3, which gives the *Burning III* effect. Adding **gunpowder** next to any of these potions will result in a Splash Potion of Flames with identical amplifiers. If you want to convert the Splash Potion of Flames back into a Potion of Flames, you can drop an empty bucket next to it.
+You can craft the tier 1 Potion of Flames by throwing an **awkward potion** on a **crafting table** with **exactly 10 blaze powders**. After a few moments, a Potion of Flames should appear. 
+
+If you again drop exactly *10 blaze powders* next to the new potion, you will get a new Potion of Flames, which gives the *Burning II* effect. Dropping exactly *10 blaze powders* the third time will result in a Potion of Flames tier 3, which gives the *Burning III* effect. Adding **gunpowder** next to any of these potions will result in a Splash Potion of Flames with identical amplifiers. If you want to convert the Splash Potion of Flames back into a Potion of Flames, you can drop an empty bucket next to it.
 
 ### Useful info:
 
