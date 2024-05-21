@@ -1,4 +1,4 @@
-# Applies the splash effect with amplifier 1 to entity in splash area
+# Applies the splash effect with amplifier 1 to entity in the splash area
 
 tag @s[type=player] add flamepot.effect_from_splash
 
