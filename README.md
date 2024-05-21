@@ -25,8 +25,6 @@ If you again drop exactly *10 blaze powders* next to the new potion, you will ge
 
 ## Future
 
-- maybe: don't affect entities below the splash effect
-
 - add a tipped arrow burning effect
 
 - maybe: place fire where splash potion collides
