@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "flamepot.in_water": {
+            "trigger": "enter_block",
+            "conditions": {
+                "block": "minecraft:water"
+            }
+        },
+        "flamepot.in_water_cauldron": {
+            "trigger": "enter_block",
+            "conditions": {
+                "block": "minecraft:water_cauldron"
+            }
+        }
+    },
+    "requirements": [
+        ["flamepot.in_water", "flamepot.in_water_cauldron"]
+    ],
+    "rewards": {
+        "function": "flamepot:effects/clear/in_water"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "flamepot.consume_milk": {
+            "trigger": "consume_item",
+            "conditions": {
+                "player": {},
+                "item": {
+                    "items": [
+                        "minecraft:milk_bucket"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "flamepot:effects/clear/consume_milk"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "flamepot.consume_flame_potion_1": {
+            "trigger": "consume_item",
+            "conditions": {
+                "player": {},
+                "item": {
+                    "items": [
+                        "minecraft:potion"
+                    ],
+                    "nbt": "{flamepot.burning:1b}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "flamepot:consuming_potion/potion1"
+    }
+}
