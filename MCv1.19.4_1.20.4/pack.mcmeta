@@ -3,7 +3,7 @@
     "pack_format": 26,
     "supported_formats": {
       "max_inclusive": 26,
-      "min_inclusive": 15
+      "min_inclusive": 12
     },
     "description": "flamepot (Potion of Flames) Datapack"
   }
